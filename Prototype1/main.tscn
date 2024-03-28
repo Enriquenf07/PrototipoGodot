@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cud3ohwba06d2"]
+
+[ext_resource type="PackedScene" uid="uid://cwnekevfkr7jr" path="res://background.tscn" id="1_jmxmx"]
+[ext_resource type="PackedScene" uid="uid://durcue74v1ahl" path="res://character.tscn" id="2_wbmmr"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_jmxmx")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_wbmmr")]
