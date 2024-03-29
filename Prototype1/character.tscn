@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://durcue74v1ahl"]
+[gd_scene load_steps=5 format=3 uid="uid://durcue74v1ahl"]
 
 [ext_resource type="Script" path="res://character.gd" id="1_6aj70"]
 [ext_resource type="Texture2D" uid="uid://q17inylr3qac" path="res://personagem.png" id="1_xglxy"]
+[ext_resource type="PackedScene" uid="uid://bdbbo4vkpn2wy" path="res://sword.tscn" id="3_lwxxh"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uh0hd"]
 radius = 44.0454
@@ -10,11 +11,14 @@ radius = 44.0454
 script = ExtResource("1_6aj70")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(745, 189)
+position = Vector2(522, 316)
 shape = SubResource("CircleShape2D_uh0hd")
 debug_color = Color(0.866667, 0.101961, 0.815686, 0.419608)
 
 [node name="Personagem" type="Sprite2D" parent="."]
-position = Vector2(744, 191)
+position = Vector2(521, 316)
 scale = Vector2(0.44, 0.44)
 texture = ExtResource("1_xglxy")
+
+[node name="Sword" parent="." instance=ExtResource("3_lwxxh")]
+position = Vector2(579, 324)
